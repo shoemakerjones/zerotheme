@@ -15,8 +15,8 @@ ZSH_THEME_RUBY_PROMPT_PREFIX="%{$fg[green]%}‹"
 ZSH_THEME_RUBY_PROMPT_SUFFIX="›%{$reset_color%}"
 
 local user='%{$fg[red]%}%n%{$reset_color%}'
-local machine='%{$fg[red]%}%m%{$reset_color%}'
-local pwd='%~%{$reset_color%}'
+local machine='%{$fg[yellow]%}%m%{$reset_color%}'
+local pwd='%{$fg[cyan]%}%d%{$reset_color%}'
 
-PROMPT="${user}$ "
-RPROMPT="${pwd}"
+PROMPT="${user}:${pwd} ƒ "
+RPROMPT="${machine}"
